@@ -7,3 +7,6 @@
 .active-border {
     @apply border-b-4 border-purple-800 pt-1;
 }
+.bg-blue-image{
+    background-image:url('./Images/Background/Abstract.jpg');
+}

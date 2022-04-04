@@ -2,8 +2,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
     font-family: "Space Mono", monospace;
+}
+
+.font-monoton {
+    font-family: 'Monoton', cursive;
+}
+
+.font-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.active-border {
+    @apply border-b-4 border-purple-800 pt-1;
+
+    border-bottom-width: 4px;
+    padding-top: 4px;
+    border-color: rgb(107, 33, 168);
+}
+
+.bg-blue-image {
+    background-image: url(../Images/Background/Abstract.jpg);
 }
 
 .glasomorphism {
@@ -25,17 +50,13 @@
     scrollbar-width: none;
 }
 
-.font-monoton {
-    font-family: 'Monoton', cursive;
-}
 
-.font-mont {
-    font-family: 'Montserrat', sans-serif;
-}
 
 .recently-watched {
-    /* margin-left: 24px;
-    margin-right: 24px;
+    @apply mx-2 min-h-[150px] min-w-[300px] rounded-md bg-white text-black transition hover:scale-105;
+/* 
+    margin-left: 20px;
+    margin-right: 20px;
     min-height: 150px;
     min-width: 300px;
     border-radius: 6px;
@@ -44,18 +65,19 @@
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
-    transform: scale(1.10); */
-    @apply mx-2 min-h-[150px] min-w-[300px] rounded-md bg-white text-black transition hover:scale-105;
+    transform: scale(1.10); 
+*/
 }
 
 .recently-watched-image {
+    @apply -z-10 h-full w-full cursor-pointer rounded-md object-cover;
+
     /* z-index: -10;
     height: 100%;
     width: 100%;
     cursor: pointer;
     border-radius: 6px;
     object-fit: cover; */
-    @apply -z-10 h-full w-full cursor-pointer rounded-md object-cover;
 }
 
 .text-shadow {

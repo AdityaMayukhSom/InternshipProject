@@ -7,7 +7,6 @@
     text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.30);
 }
 
-
 #modal.active {
     transform: translate(-50%, -50%) scale(1);
 }

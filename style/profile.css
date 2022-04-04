@@ -1,8 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Space Mono", monospace;
+}
+
+.glasomorphism {
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+@layer utilities{
+@responsive{
+  .text-shadow {
+    text-shadow: 1px 6px 4px rgba(0,0,0,0.30);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 15px 30px rgba(0,0,0,0.11), 0 5px 15px rgba(0,0,0,0.08);
+  }
+
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}
+}
+
+#recently-watched-list::-webkit-scrollbar {
+    display: none;
+}
+#recently-watched-list {
+    border: none !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.recently-watched {
+    @apply mx-2 min-h-[150px] min-w-[300px] rounded-md bg-white text-black shadow-sm transition hover:scale-105;
+}
+
+.recently-watched-image {
+    @apply -z-10 h-full w-full cursor-pointer rounded-md object-cover;
+}
+
+.borderme {
+    border: 2px solid white;
 }

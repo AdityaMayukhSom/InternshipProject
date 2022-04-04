@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .active-border {
-  @apply border-b-4 border-purple-800 pt-1;
+    @apply border-b-4 border-purple-800 pt-1;
 }

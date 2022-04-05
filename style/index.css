@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.set-error{
+    border: 2px solid red !important;
+}
+
+.no-error{
+    border: 2px solid green !important;
+}

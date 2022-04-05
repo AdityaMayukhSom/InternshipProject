@@ -29,10 +29,10 @@
                     <div class="login-signup-content flex w-full flex-col items-center justify-center">
                         <div class="login flex w-full flex-col items-center rounded-sm p-4 text-center">
                             <h1 class="h-12 text-2xl font-bold sm:h-20 sm:text-5xl">Log In</h1>
-                            <form action="" class="login-form flex w-4/5 flex-col space-y-1 text-left">
-                                <input type="email " placeholder="Enter Your Email " name=" " id="email "
+                            <form action="" class="login-form flex w-4/5 flex-col space-y-1 text-left" id="index-page-login-form">
+                                <input type="email" placeholder="Enter Your Email " name=" " id="login-email"
                                     class="w-full rounded-lg border-2 border-gray-200 p-4 pr-12 text-sm shadow-sm outline-none focus:border-blue-700" />
-                                <input type="password " placeholder="Enter Your Password " name=" " id="password "
+                                <input type="password" placeholder="Enter Your Password " name=" " id="login-password"
                                     class="w-full rounded-lg border-2 border-gray-200 p-4 pr-12 text-sm shadow-sm outline-none focus:border-blue-700" />
                             </form>
 
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
 
-                            <button type="submit"
+                            <button type="submit" formmethod="post" form="index-page-login-form"
                                 class="login-submit-button bg-gradient-to-r mb-4 mt-4 h-12 w-3/4 max-w-lg rounded-2xl from-purple-400 via-purple-600 to-purple-800 text-lg font-bold text-white">Log
                                 In</button>
 
@@ -60,12 +60,12 @@
                         </div>
                         <div class="signup flex hidden w-full flex-col items-center rounded-sm p-4 text-center">
                             <h1 class="h-12 text-2xl font-bold sm:h-20 sm:text-5xl">Sign Up</h1>
-                            <form action=" " class="signup-form flex w-4/5 flex-col space-y-1 text-left">
-                                <input type="email " placeholder="Enter Your Email " name=" " id="email "
+                            <form action=" " class="signup-form flex w-4/5 flex-col space-y-1 text-left" id="index-page-signup-form">
+                                <input type="email" placeholder="Enter Your Email" name="" id="signup-email"
                                     class="w-full rounded-lg border-2 border-gray-200 p-4 pr-12 text-sm shadow-sm outline-none focus:border-blue-700" />
-                                <input type="password " placeholder="Enter Your Password " name=" " id="password "
+                                <input type="password" placeholder="Enter Your Password" name=" " id="signup-password"
                                     class="w-full rounded-lg border-2 border-gray-200 p-4 pr-12 text-sm shadow-sm outline-none focus:border-blue-700" />
-                                <input type="password " placeholder="Confirm Your Password " name=" " id="password "
+                                <input type="password" placeholder="Confirm Your Password" name=" " id="signup-confirm-password"
                                     class="w-full rounded-lg border-2 border-gray-200 p-4 pr-12 text-sm shadow-sm outline-none focus:border-blue-700" />
                             </form>
                             <div class="my-2 w-full">
@@ -73,7 +73,8 @@
                                 <label for="termsAndCondition">I agree to and accept the <a href="" class="text-blue-600">terms and conditions.</a></label>
                             </div>
 
-                            <button type="submit" class="bg-gradient-to-r mb-2 h-12 w-3/4 max-w-lg rounded-2xl from-purple-400 via-purple-600 to-purple-800 text-lg font-bold text-white">Sign
+                            <button type="submit" formmethod="post" form="index-page-signup-form"
+                                class="bg-gradient-to-r mb-2 h-12 w-3/4 max-w-lg rounded-2xl from-purple-400 via-purple-600 to-purple-800 text-lg font-bold text-white">Sign
                                 Up</button>
                             <p class="mb-2 text-gray-600">Or Sign Up With Other Social Media</p>
                             <div class="social-media-icon-container mx-3 flex h-4 flex-row sm:h-8">

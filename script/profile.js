@@ -1,26 +1,38 @@
-let recentlyWatchedList = document.getElementById("recently-watched-list");
-const BASE_URL = "./Images/Movie Poster/";
-const recentlyWatchedMoviesImage = ["WildCard.jpg", "BreakingBad.jpg", "DawnOfJustice.jpg", "DoctorStrange.jpg", "ThorRagnarok.jpg", "SleepyHollow.jpg", "JohnWick.jpg"];
+let recentlyWatchedList = document.getElementById("recently-watched-list")
+const BASE_URL = "./Images/Movie Poster/"
+const recentlyWatchedMoviesImage = ["WildCard.jpg", "BreakingBad.jpg", "DawnOfJustice.jpg", "DoctorStrange.jpg", "ThorRagnarok.jpg", "SleepyHollow.jpg", "JohnWick.jpg"]
+
+const dropdownButton = document.getElementById("dropdown-button")
+const dropdownMenu = document.getElementById("dropdown-menu")
+
+dropdownButton.addEventListener("click", () => {
+    if (dropdownMenu.classList.contains("hidden")) {
+        dropdownMenu.classList.remove("hidden")
+    } else {
+        dropdownMenu.classList.add("hidden")
+    }
+})
+
 
 recentlyWatchedMoviesImage.forEach((image) => {
-    var myDiv = document.createElement("div");
-    myDiv.classList.add("recently-watched");
-    recentlyWatchedList.appendChild(myDiv);
-    myDiv.innerHTML = `<img src="${BASE_URL + image}" alt="" class="recently-watched-image" />`;
-});
+    var myDiv = document.createElement("div")
+    myDiv.classList.add("recently-watched")
+    recentlyWatchedList.appendChild(myDiv)
+    myDiv.innerHTML = `<img src="${BASE_URL + image}" alt="" class="recently-watched-image" />`
+})
 
-recentlyWatchedList.addEventListener("mouseover", addMyBorder);
-recentlyWatchedList.addEventListener("mouseout", removeMyBorder);
+recentlyWatchedList.addEventListener("mouseover", addMyBorder)
+recentlyWatchedList.addEventListener("mouseout", removeMyBorder)
 function addMyBorder(e) {
     if (e.target !== e.currentTarget) {
-        let parent = e.target.parentElement;
-        parent.classList.add("borderme");
+        let parent = e.target.parentElement
+        parent.classList.add("borderme")
     }
 }
 function removeMyBorder(e) {
     if (e.target !== e.currentTarget) {
-        let parent = e.target.parentElement;
-        parent.classList.remove("borderme");
+        let parent = e.target.parentElement
+        parent.classList.remove("borderme")
     }
 }
 

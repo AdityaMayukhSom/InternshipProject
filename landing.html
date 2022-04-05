@@ -10,8 +10,8 @@
         <title>Home Page</title>
     </head>
 
-    <body>
-        <nav class="flex w-full flex-col items-center bg-[#0D0D0D] py-3 text-gray-500 shadow-lg sm:flex-row sm:justify-between lg:h-16">
+    <body class="relative min-h-screen bg-[#010409] lg:grid lg:grid-rows-[64px_auto]">
+        <nav class=" flex w-full flex-col items-center bg-[#0D0D0D] py-3 text-gray-500 shadow-lg sm:flex-row sm:justify-between lg:h-16">
             <!-- Logo -->
             <div class="logo my-auto select-none text-center font-monoton text-4xl uppercase text-white sm:mx-3 sm:max-w-[150px] sm:text-lg lg:text-[28px] lg:mx-4">
                 Cinecode</div>
@@ -21,14 +21,11 @@
             <div class="flex flex-row items-center">
                 <!-- Left links -->
                 <ul class="list-style-none mr-auto flex flex-row pl-0 text-sm hover:text-gray-700 focus:text-gray-700 md:text-base">
-                    <li class="p-2">
-                        <a class="whitespace-nowrap p-0 font-mont text-gray-200 hover:text-gray-700 focus:text-gray-700" href="#">Dashboard</a>
-                    </li>
-                    <li class="p-2">
+                    <li class="p-2 mx-2">
                         <a class="whitespace-nowrap p-0 font-mont text-gray-200 hover:text-gray-700 focus:text-gray-700" href="#">Home</a>
                     </li>
-                    <li class="p-2">
-                        <a class="whitespace-nowrap p-0 font-mont text-gray-200 hover:text-gray-700 focus:text-gray-700" href="#">Watch Movie</a>
+                    <li class="p-2 mx-2">
+                        <a class="whitespace-nowrap p-0 font-mont text-gray-200 hover:text-gray-700 focus:text-gray-700" href="#">Streaming Now</a>
                     </li>
                 </ul>
                 <!-- Left links -->
@@ -90,6 +87,14 @@
             </div>
             <!-- Right elements -->
         </nav>
+
+        <main class="grid h-full w-full grid-flow-row text-white md:grid-cols-[300px_auto] lg:grid-cols-[350px_auto]">
+            <div class=""></div>
+            <div class=""></div>
+        </main>
+
+
+
 
         <script src="./script/landing.js"></script>
     </body>

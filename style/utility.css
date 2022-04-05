@@ -11,6 +11,10 @@
     font-family: "Space Mono", monospace;
 }
 
+.div-shadow {
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.6);
+}
+
 .font-monoton {
     font-family: 'Monoton', cursive;
 }
